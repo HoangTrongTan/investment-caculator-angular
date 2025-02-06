@@ -1,0 +1,13 @@
+table{
+    border-spacing: 1rem;
+}
+table tr th {
+  text-align: center;
+  font-size: 0.7rem;
+  color: #83e6c0;
+}
+table tr td {
+  text-align: end;
+  font-size: 0.85rem;
+  color: #c2e9e0;
+}

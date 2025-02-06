@@ -1,0 +1,51 @@
+p,
+button {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 10px;
+  text-align: start;
+  margin: 2px 0;
+}
+input {
+  border-radius: 7px;
+  background: transparent;
+  outline: none;
+  padding: 7px 3px;
+  border-color: #fff;
+  caret-color: #fff;
+  color: #fff;
+}
+.center-caculator {
+  text-align: center;
+}
+.wrapper-caculator {
+  display: inline-block;
+  background: linear-gradient(180deg, #307e6c, #2b996d);
+  padding: 10px;
+  border-radius: 7px;
+}
+.box-input-wrapper {
+  display: flex;
+}
+.box-input {
+  padding: 7px;
+}
+.btn {
+  padding: 0 20px;
+}
+.caculate {
+  width: 100%;
+  padding: 8px 0;
+  text-align: center;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  border: 1px solid #76c0ae;
+  border-radius: 0.25rem;
+  background-color: #83e6c0;
+  color: #1a1f1d;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
