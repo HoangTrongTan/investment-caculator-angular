@@ -1,0 +1,32 @@
+<table>
+  <tr>
+    <th>Year</th>
+    <th>Investment Value</th>
+    <th>Interest (Year)</th>
+    <th>Total Interest</th>
+    <th>Invested Capital</th>
+  </tr>
+  @for(value of CaculatedResultOfInvestment; track value.year){
+  <tr>
+    <td>{{ value.year }}</td>
+    <td>
+      ${{
+        value.annualInvestment.toLocaleString("en-US", {
+          minimumFractionDigits: 2,
+          maximumFractionDigits: 2
+        })
+      }}
+    </td>
+    <td>${{ value.interest.toFixed(2) }}</td>
+    <td>${{ value.totalInterest.toFixed(2) }}</td>
+    <td>
+      ${{
+        value.totalAmountInvested.toLocaleString("en-US", {
+          minimumFractionDigits: 2,
+          maximumFractionDigits: 2
+        })
+      }}
+    </td>
+  </tr>
+  }
+</table>
