@@ -1,0 +1,27 @@
+<div class="center-caculator">
+    <form (ngSubmit)="onCaculatorInvestment()" class="wrapper-caculator">
+      <div class="box-input-wrapper">
+          <div class="left">
+              <div class="box-input">
+                <p>initial Investment</p>
+                <input [(ngModel)]="initialInvestment" [ngModelOptions]="{standalone: true}" type="number" />
+              </div>
+              <div class="box-input">
+                <p>annual Investment</p>
+                <input [(ngModel)]="annualInvestment" [ngModelOptions]="{standalone: true}" type="number" />
+              </div>
+          </div>
+          <div class="right">
+              <div class="box-input">
+                <p>expected Return</p>
+                <input [(ngModel)]="expectedReturn" [ngModelOptions]="{standalone: true}" type="number" />
+              </div>
+              <div class="box-input">
+                <p>duration</p>
+                <input [(ngModel)]="duration" [ngModelOptions]="{standalone: true}" type="number" />
+              </div>
+          </div>
+      </div>
+      <div class="btn"><button type="submit" class="caculate">caculate</button></div>
+    </form>
+</div>
